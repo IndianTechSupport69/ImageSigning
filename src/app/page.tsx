@@ -40,14 +40,14 @@ export default function HomePage() {
         />
         <div className="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
         <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-        {darkMode ? <FaMoon /> : <FaSun />}
+          {darkMode ? <FaMoon /> : <FaSun className="text-yellow-500" />}
         </span>
       </label>
       </div>
       <hr className="w-1/2 border-t-2 border-gray-300 my-8" />
 
       <h2 className={`text-4xl font-bold text-center ${darkMode ? 'text-white' : 'text-gray-900'} mt-5 tracking-tight`}>
-        Why us? </h2>
+        Why use us? </h2>
     <div className="flex justify-center items-center min-h-screen space-x-10">
       <div className="max-w-[24rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
       <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
@@ -89,6 +89,11 @@ export default function HomePage() {
       </div>
       </div>
     </div>
+    <footer className={`w-full py-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} text-center`}>
+      <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+        &copy; {new Date().getFullYear()} ImageSign. All rights reserved.
+      </p>
+    </footer>
     </div>
   );
 }
