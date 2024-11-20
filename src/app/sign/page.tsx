@@ -52,6 +52,7 @@ export default function Home() {
     }, 5000);
   };
 
+
   const handleSign = async () => {
     if (!privateKey || !image) {
       showAlert('warning', 'Please upload both an image and a private key.');
@@ -293,6 +294,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+
       <div className="absolute top-5 left-5">
         <img
           src="/images/logo.png"

@@ -25,7 +25,7 @@ export default function HomePage() {
         Welcome to ImageSign, your trusted platform for secure image signing using private and public keys to mitigate deep fakes.
       </p>
       <Link href="/sign" className="bg-black text-white font-medium py-3 px-6 rounded-full hover:bg-gray-800 transition duration-300 mt-10">
-      Go to Sign Page
+      Sign Your Image
       </Link>
       <a href="https://github.com/IndianTechSupport69" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4">
       <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-12 h-12 rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300" />
