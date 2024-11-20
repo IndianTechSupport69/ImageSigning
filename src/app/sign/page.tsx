@@ -20,7 +20,7 @@ export default function Home() {
   const [privateKey, setPrivateKey] = useState<File | null>(null);
   const [publicKey, setPublicKey] = useState<File | null>(null);
   const [alert, setAlert] = useState<{ type: string, message: string } | null>(null);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -294,12 +294,12 @@ export default function Home() {
         </div>
       </div>
       <div className="absolute top-5 left-5">
-        <button
+        <img
+          src="/images/logo.png"
+          alt="Logo"
+          className="w-20 h-20 cursor-pointer"
           onClick={() => window.location.href = '/'}
-          className="bg-black text-white font-medium py-2 px-4 rounded-full hover:bg-gray-800 transition duration-300"
-          >
-          Home
-        </button>
+        />
       </div>
 
       {alert && (
