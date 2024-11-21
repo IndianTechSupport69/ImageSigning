@@ -309,7 +309,7 @@ export default function Home() {
           <span className="font-semibold mr-1">{alert?.type === 'success' ? 'Success' : 'Error'}</span> {alert?.message}
         </div>
       )}
-      <a href="https://github.com/IndianTechSupport69" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4">
+      <a href="https://github.com/IndianTechSupport69/ImageSigning" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-12 h-12 rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300" />
       </a>
     </div>
