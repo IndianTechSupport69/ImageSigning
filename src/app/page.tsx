@@ -46,8 +46,9 @@ export default function HomePage() {
       </div>
       <hr className="w-1/2 border-t-2 border-gray-300 my-8" />
 
-      <h2 className={`text-4xl font-bold text-center ${darkMode ? 'text-white' : 'text-gray-900'} mt-5 tracking-tight`}>
-        Why use us? </h2>
+      <h2 className={`text-3xl sm:text-4xl font-bold text-center ${darkMode ? 'text-white' : 'text-gray-900'} mt-5 tracking-tight`}>
+        Why use us?
+      </h2>        
     <div className="absolute top-5 left-5 sm:block hidden">
       <img src="/images/logo.png" alt="Logo" className="w-16 h-16 sm:w-20 sm:h-20" />
     </div>
