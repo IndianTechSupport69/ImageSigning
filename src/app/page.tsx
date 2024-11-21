@@ -48,43 +48,43 @@ export default function HomePage() {
 
       <h2 className={`text-4xl font-bold text-center ${darkMode ? 'text-white' : 'text-gray-900'} mt-5 tracking-tight`}>
         Why use us? </h2>
-    <div className="absolute top-5 left-5">
-      <img src="/images/logo.png" alt="Logo" className="w-20 h-20" />
+    <div className="absolute top-5 left-5 sm:block hidden">
+      <img src="/images/logo.png" alt="Logo" className="w-16 h-16 sm:w-20 sm:h-20" />
     </div>
     
-    <div className="flex justify-center items-center min-h-screen space-x-10">
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen space-y-10 md:space-y-0 md:space-x-10 px-4">
       {[
       {
-        imgSrc: "/images/deep.jpg",
-        title: "DeepFakes",
-        description:
-        "Deepfakes are synthetic media manipulated to portray individuals saying or doing things they never did, spreading misinformation and damaging reputations by creating realistic but false content. This proliferation of deceptive material leads to widespread confusion and mistrust among the public.",
+      imgSrc: "/images/deep.jpg",
+      title: "DeepFakes",
+      description:
+      "Deepfakes are synthetic media manipulated to portray individuals saying or doing things they never did, spreading misinformation and damaging reputations by creating realistic but false content. This proliferation of deceptive material leads to widespread confusion and mistrust among the public.",
       },
       {
-        imgSrc: "/images/deepfake.png",
-        title: "Prevention",
-        description:
-        "Digitally signing images helps verify their authenticity and integrity. A unique cryptographic signature is generated using the creator's private key and can be verified with the public key. This ensures the image hasn't been altered, establishing trust and reducing the impact of deepfakes.",
+      imgSrc: "/images/deepfake.png",
+      title: "Prevention",
+      description:
+      "Digitally signing images helps verify their authenticity and integrity. A unique cryptographic signature is generated using the creator's private key and can be verified with the public key. This ensures the image hasn't been altered, establishing trust and reducing the impact of deepfakes.",
       },
       {
-        imgSrc: "/images/javascript.jpg",
-        title: "Client Side",
-        description:
-        "Our solution runs entirely on the client side, ensuring that no data or images are uploaded to our server. This approach enhances security and privacy, as your sensitive information stays on your device. By processing everything locally, we eliminate the risk of data breaches and unauthorized access.",
+      imgSrc: "/images/javascript.jpg",
+      title: "Client Side",
+      description:
+      "Our solution runs entirely on the client side, ensuring that no data or images are uploaded to our server. This approach enhances security and privacy, as your sensitive information stays on your device. By processing everything locally, we eliminate the risk of data breaches and unauthorized access.",
       },
       ].map((item, index) => (
       <div key={index} className="max-w-[24rem] w-full flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-        <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
-        <img src={item.imgSrc} alt="" className="w-full h-64 object-cover" />
-        </div>
-        <div className="p-6 flex-grow">
-        <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-          {item.title}
-        </h4>
-        <p className="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
-          {item.description}
-        </p>
-        </div>
+      <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
+      <img src={item.imgSrc} alt="" className="w-full h-64 object-cover" />
+      </div>
+      <div className="p-6 flex-grow">
+      <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+        {item.title}
+      </h4>
+      <p className="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
+        {item.description}
+      </p>
+      </div>
       </div>
       ))}
     </div>
