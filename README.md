@@ -25,7 +25,8 @@
 
 <h2 id="started">🚀 Getting started</h2>
 
-For demo visit (URL Soon to come)
+For demo visit:
+https://www.imagesign.org
 
 Its also possible to run locally
 
