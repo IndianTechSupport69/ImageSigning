@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import JSZip from "jszip";
 import { FaSun, FaMoon } from 'react-icons/fa';
+import Image from 'next/image';
 
 function pemToArrayBuffer(pem: string): ArrayBuffer {
   const b64 = pem.replace(/-----(BEGIN|END)[\w\s]+-----/g, "").replace(/\s+/g, "");
@@ -310,7 +311,13 @@ export default function Home() {
         </div>
       )}
       <a href="https://github.com/IndianTechSupport69/ImageSigning" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="w-12 h-12 rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300" />
+        <Image 
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+          alt="GitHub" 
+          width={48} 
+          height={48} 
+          className="rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300" 
+        />
       </a>
     </div>
   );
