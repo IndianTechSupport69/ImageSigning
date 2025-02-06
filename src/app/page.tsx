@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(true);
@@ -38,6 +39,7 @@ export default function HomePage() {
         onChange={toggleDarkMode}
         className="sr-only peer"
         />
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <div className="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
         <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
         {darkMode ? <FaMoon /> : <FaSun />}
@@ -49,9 +51,15 @@ export default function HomePage() {
       <h2 className={`text-4xl font-bold text-center ${darkMode ? 'text-white' : 'text-gray-900'} mt-5 tracking-tight`}>
         Why us? </h2>
     <div className="flex justify-center items-center min-h-screen space-x-10">
-      <div className="max-w-[24rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="max-w-[30rem] h-[42rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
       <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
-        <img src="/images/deep.jpg" alt="" className="w-full h-64 object-cover" />
+        <Image
+          src="/images/deep.jpg"
+          alt="Deep Fakes"
+          width={384}
+          height={256}
+          className="object-cover w-full h-64"
+        />
       </div>
       <div className="p-6">
         <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -62,9 +70,15 @@ export default function HomePage() {
         </p>
       </div>
       </div>
-      <div className="max-w-[24rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="max-w-[30rem] h-[42rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
       <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
-        <img src="/images/deepfake.png" alt="" className="w-full h-64 object-cover" />
+        <Image
+          src="/images/deepfake.png"
+          alt="AI"
+          width={384}
+          height={256}
+          className="object-cover w-full h-64"
+        />
       </div>
       <div className="p-6">
         <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -75,9 +89,15 @@ export default function HomePage() {
         </p>
       </div>
       </div>
-      <div className="max-w-[24rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="max-w-[30rem] h-[42rem] flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
       <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
-        <img src="/images/javascript.jpg" alt="" className="w-full h-64 object-cover" />
+        <Image
+          src="/images/javascript.jpg"
+          alt="Client Side"
+          width={384}
+          height={256}
+          className="object-cover w-full h-64"
+        />
       </div>
       <div className="p-6">
         <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
