@@ -58,7 +58,7 @@ export default function HomePage() {
         Deep Fakes
         </h4>
         <p className="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates, voluptatibus ratione distinctio repellendus nesciunt veritatis quasi, aperiam accusamus omnis sint nostrum quos, exercitationem minus? Neque repudiandae inventore repellendus aut.
+        Deepfakes use advanced machine learning techniques, such as deep neural networks and generative adversarial networks, to create or alter images and videos in a highly realistic manner. These technologies can seamlessly blend or superimpose faces, voices, and movements, making it appear as though someone said or did something they never did. While this technology offers creative innovations in entertainment and digital art, it also raises significant concerns about misinformation, privacy breaches, and the potential for fraud or manipulation.
         </p>
       </div>
       </div>
@@ -71,7 +71,7 @@ export default function HomePage() {
         AI
         </h4>
         <p className="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates, voluptatibus ratione distinctio repellendus nesciunt veritatis quasi, aperiam accusamus omnis sint nostrum quos, exercitationem minus? Neque repudiandae inventore repellendus aut.
+        Artificial Intelligence (AI) is a branch of computer science focused on creating systems that can perform tasks typically requiring human cognition—such as learning, reasoning, and problem-solving. AI leverages techniques like machine learning, deep learning, and neural networks to analyze data, adapt to new inputs, and make decisions, driving innovations across industries from healthcare to finance.
         </p>
       </div>
       </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
         Client Side
         </h4>
         <p className="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates, voluptatibus ratione distinctio repellendus nesciunt veritatis quasi, aperiam accusamus omnis sint nostrum quos, exercitationem minus? Neque repudiandae inventore repellendus aut.
+        This application runs entirely on the client side, harnessing React's dynamic rendering and state management to deliver fast, interactive user experiences directly in the browser.
         </p>
       </div>
       </div>
